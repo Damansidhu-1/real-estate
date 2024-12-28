@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate | Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1>RealEstate</h1>
+      </div>
+      <div class="nav-right" id="nav-right">
+        <!-- These links will be visible only if user is not logged in -->
+        <a href="login.html" id="login-link">Login</a>
+        <a href="signup.html" id="signup-link">Signup</a>
+
+        <!-- These will be visible only if user is logged in -->
+        <span id="user-name"></span>
+        <button id="logout-btn" style="display: none">Logout</button>
+      </div>
+    </nav>
+
+    <!-- Property Section -->
+    <section class="property-list" id="property-list">
+      <!-- Cards will be inserted here dynamically -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Real Estate. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+  </body>
+</html>
